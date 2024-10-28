@@ -1,0 +1,36 @@
+.RegisterSection{
+    border: 0px solid black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.authForm{
+    border: 1px;
+    margin-top: 10px;
+    padding: 40px;
+    box-shadow: 5px 5px 5px 5px lightgrey;
+}
+
+.authForm h3{
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.authForm input{
+    width: 300px;
+    margin-bottom: 20px;
+    height: 30px;
+
+}
+
+.authForm label{
+    margin-bottom: 10px;
+}
+
+.btnSubmit{
+    text-align: center;
+    padding: 10px;
+}

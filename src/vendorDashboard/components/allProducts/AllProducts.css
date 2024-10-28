@@ -1,0 +1,11 @@
+.product-table{
+    border:1px solid red;
+    width: 80vw;
+    border-collapse:collapse;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.product-table tr,th,td{
+    border:1px solid gray   
+}
