@@ -23,11 +23,11 @@ const AllProducts = () => {
       console.log("use effect used");
     },[])
 
-  const deleteProductById = async(productId)=>{
+  const deleteProductById = async (productId)=>{
     try {   
       const response = await fetch(`${API_URL}/product/${productId}`,{ 
           method: 'DELETE'
-        }) 
+        })  
         if(response.ok){
           console.log("sanelo")
           setProducts(products.filter(product=>product._id !== productId));  

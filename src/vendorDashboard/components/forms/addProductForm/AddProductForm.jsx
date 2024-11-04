@@ -52,12 +52,12 @@ const AddProductForm = () => {
       });
       const data = await response.json()
       if (response.ok){
-        alert("Product added succefully");
         setProductName("");
         setCategory([]);
         setDescription("");
         setFile(null);
-        setPrice("")
+        setPrice("");
+        alert("Product added successfully");
       }
     } catch (error) {
       console.error(error);

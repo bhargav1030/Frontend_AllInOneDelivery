@@ -33,13 +33,13 @@ const LoginForm = () => {
     const vendorId =data.vendorId;
     console.log('checking vendor id',vendorId);
     const vendorResponse = await fetch(`${API_URL}/vendor/single-vendor/${vendorId}`)
+    window.location.reload();
     const vendorData = await  vendorResponse.json();
     if (vendorResponse.ok){
       if(firmId !=='undefined'){
         const firmName = vendorData.vendor.firm[0].firmName
          localStorage.setItem('firmName',firmName);
       }
-      window.location.reload();
     }  
   }  
   catch (error) {
